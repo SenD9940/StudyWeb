@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+    <script>
+        const today = new Date();
+        const currentyear = today.getFullYear();
+        const birthYear = prompt("태어난 연도를 입ㅕ하세요. (YYYY)", currentyear);
+        const age = currentyear - birthYear + 1;
+        document.write(currentyear + "년 현재<br>");
+        document.write(currentyear, "년에 태어난 사람의 나이는 ", age, "세 입니다");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

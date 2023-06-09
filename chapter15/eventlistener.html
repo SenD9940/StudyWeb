@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#box{
+            width: 100px; height: 100px;
+            background-color: #FC9;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            let box = document.querySelector("#box");
+            let txt = document.querySelector("#txt");
+            let btn = document.querySelector("#btn");
+
+            function over(){
+                txt.innerHTML = "마우스를 올렸습니다";
+            }
+            box.addEventListener('mouseover', over);
+            function out(){
+                txt.innerHTML = "마우스를 내렸습니다";
+            }
+            box.addEventListener('mouseout', out);
+            function clk(){
+                txt.innerHTML = "마우스를 클릭했습니다";
+            }
+            function add_clk(){
+                box.addEventListener('click', clk);
+                txt.innerHTML = "클릭이벤트가 추가 되었습니다";
+            }
+            box.addEventListener('dblclick', add_clk);
+            function del_clk(){
+                box.removeEventListener('click', clk);
+                txt.innerHTML = "클릭이벤트가 제거 되었습니다";
+            }
+            btn.addEventListener('click', del_clk);
+        }
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+    <div id="txt"></div>
+    <button id="btn" >클릭이벤트 제거</button>
+</body>
+</html>

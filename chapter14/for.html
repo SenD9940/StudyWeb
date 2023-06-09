@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            display: inline-block;
+            margin: 16px;
+            padding: 16px;
+        }
+    </style>
+    <script>
+        let div = "<div>";
+        const datas = ['apple', 'grapes', 'banana', 'mango'];
+        for(let i = 0; i < datas.length; i++){
+            //const 사용 불가
+            div += datas[i] + "<br>";
+        }
+        div += "</div>";
+        document.write(div);
+        div = "<div>";
+        for(const index in datas){
+            div += datas[index] + "<br>";
+        }
+        div += "</div>";
+        document.write(div);
+        div = "<div>";
+        for(const data of datas){
+            div += data + "<br>";
+        }
+        div += "</div>";
+        document.write(div);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

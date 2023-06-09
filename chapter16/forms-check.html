@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(form){
+            const grade_len = form.grade.length;
+            for(let i = 0; i < grade_len; i++){
+                if(form.grade[i].checked === true){
+                    break;
+                }
+                if(i = grade_len - 1){
+                    alert('학목을 선택하지 않았습니다');
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="myfrom">
+        <input type="radio" name="grade" value="1학년">1학년<br>
+        <input type="radio" name="grade" value="2학년">2학년<br>
+        <input type="radio" name="grade" value="3학년">3학년<br>
+        <input type="radio" name="grade" value="4학년">4학년<br>
+        <input type="button" value="확인" onClick="javascript:check(this.from)">
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr1 = [10, 20, 30, 40, 50];
+        document.write(`원래 배열: ${arr1} <br>`);
+        let arr2 = arr1.slice(2, 4);
+        document.write(`새로운 배열: ${arr2} <br>`);
+        let arr3 = arr1.slice(2);
+        document.write(`새로운 배열: ${arr3} <br>`);
+        document.write(`원래 배열: ${arr1} <br>`);
+        let data1 = arr1.splice(2, 0, 'a');
+        document.write(`변경된 배열: ${arr1} <br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

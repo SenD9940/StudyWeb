@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let time_id = null;
+        function time_now(){
+            const today = new Date();
+            const now = today.getHours() + "시 " + today.getMinutes() + "분 " + today.getSeconds() + "초";
+            document.myform.timebar.value = now;
+        }
+        function start(){
+            time_id = setInterval('time_now()', 1000);
+        }
+        function stop(){
+            clearInterval(time_id);
+            timebar.value = null;
+        }
+    </script>
+</head>
+<body>
+     <form name="myform">
+        <input type="text" name="timebar" id="timebar" size="30"/>
+        <br>
+        <button onclick="start()">시작</button>
+        <button onclick="stop()">종료</button>
+    </form>
+</body>
+</html>

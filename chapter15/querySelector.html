@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="change">변경</button>
+    <h2>한국교통대학교</h2>
+    <script>
+        let changeBtn = document.querySelector("#change");
+        changeBtn.onclick = changeColor;
+
+        function changeColor(){
+            let h2 = document.querySelector("h2");
+            if(h2.style.color === "rgb(255, 0, 0)"){
+                h2.style.color = "black";
+            }else{
+                h2.style.color = "#f00";
+            }
+        }
+    </script>
+</body>
+</html>

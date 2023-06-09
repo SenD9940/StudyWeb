@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const height = prompt("당신의 키는? ", "");
+        const weight = prompt("당신의 몸무게는? ", "");
+        const normal = (height - 100) * 0.9;
+        document.write("적정체중 ", normal);
+        const result = weight >= normal - 2 && weight <= normal + 2;
+        const message = result ? "적정 체중입니다" : "적정 체중이 아닙니다";
+        alert(message);
+    </script>
+</head>
+    <body>
+        
+    </body>
+</html>

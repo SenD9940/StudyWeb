@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #item{
+            position: relative;
+            width: 500px;
+            height: auto;
+            padding: 15px 20px;
+            margin: auto;
+        }
+        button{
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            border: 1px solid black;
+            font-size: 0.8em;
+        }
+        .over{
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+        }
+        .detail{
+            width: 400px;
+            text-align: left;
+            line-height: 1.8;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="item">
+        <img src="./IMG_3438.PNG" alt="" width="100%">
+        <button class="over" id="open" onclick="showDetail()">상세 설명 보기</button>
+        <div id="desc" class="detail">
+            <h4>등심붓꽃</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorem ipsum laboriosam magni maxime, autem eum atque error itaque repudiandae consequuntur est expedita magnam. Veritatis incidunt non aliquam sequi accusamus.</p>
+            <button id="close" onclick="hideDetail()">상세 설명 닫기</button>
+        </div>
+    </div>
+
+    <script>
+        function showDetail(){
+            document.querySelector("#desc").style.display = "block";
+            document.querySelector("#open").style.display = "none";
+        }
+        function hideDetail(){
+            document.querySelector("#desc").style.display = "none";
+            document.querySelector("#open").style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>
