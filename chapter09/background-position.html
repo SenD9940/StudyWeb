@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bg_origin_border{
+            background-origin: border-box;
+        }
+        #bg_origin_padding{
+            background-origin: padding-box;
+        }
+        #bg_origin_content{
+            background-origin: content-box;
+        }
+        div{
+            border: 20px dashed grey;
+            padding: 10px;
+            background-image: url("./back.jpeg");
+            background-repeat: no-repeat;
+            background-position: 80% 0%;
+            background-size: 80px;
+            margin: 32px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg_origin_border">
+        <h1>배경(background)</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dolor architecto reiciendis omnis perspiciatis commodi aliquid ipsa itaque, facere maxime temporibus accusamus animi cum sed id a nemo optio pariatur!</p>
+    </div>
+    <div id="bg_origin_padding">
+        <h1>배경(background)</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dolor architecto reiciendis omnis perspiciatis commodi aliquid ipsa itaque, facere maxime temporibus accusamus animi cum sed id a nemo optio pariatur!</p>
+    </div>
+    <div id="bg_origin_content">
+        <h1>배경(background)</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dolor architecto reiciendis omnis perspiciatis commodi aliquid ipsa itaque, facere maxime temporibus accusamus animi cum sed id a nemo optio pariatur!</p>
+    </div>
+</body>
+</html>

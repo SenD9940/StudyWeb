@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>레드향 주문하기</title>
+    </head>
+    <body>
+        <h3>레드향 주문하기</h3>
+        <form>
+            <fieldset>
+                <legend>상품 선택</legend>
+                <p><b>주문할 상품을 선책해 주세요</b></p>
+                <label><input type="checkbox" name="gift1" value="s_3">선물용 3k</label>
+                <input type="number" min="0" max="5" value="0">개 (최대 5개)<br>
+                <label><input type="checkbox" name="gift1" value="s_5">선물용 5k</label>
+                <input type="number" min="0" max="3" value="0">개 (최대 3개)<br>
+                <label><input type="checkbox" name="gift1" value="f_3">선물용 3k</label>
+                <input type="range" min="0" max="3" value="0">개 (최대 3개)<br>
+                <label><input type="checkbox" name="gift1" value="f_5">선물용 5k</label>
+                <input type="range" min="0" max="3" value="0" onchange="">개 (최대 5개)<br>
+                <p><b>포장 선택</b></p>
+                <label><input type="radio" name="gift2" value="yes">선물 포장</label>
+                <label><input type="radio" name="gift2" value="no" checked>선물 포장안함</label>
+                <p></p>
+                <input type="submit" value="주문"/>
+                <input type="reset" value="취소"/>
+            </fieldset>
+        </form>
+</body>
+</html>

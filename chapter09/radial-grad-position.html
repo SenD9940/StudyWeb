@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 150px;
+            margin: 16px auto;
+            color: white;
+        }
+        #closest_side{
+            background: radial-gradient(circle closest-side at 30% 40%, white, blue, purple);
+        }
+        #closest_corner{
+            background: radial-gradient(circle closest-corner at 30% 40%, white, blue, purple);
+        }
+        #farthest_side{
+            background: radial-gradient(circle farthest-side at 30% 40%, white, blue, purple);
+        }
+        #farthest_corner{
+            background: radial-gradient(circle farthest-corner at 30% 40%, white, blue, purple);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="closest_side">closest-side</div>
+    <div id="closest_corner">closest-corner</div>
+    <div id="farthest_side">farthest-side</div>
+    <div id="farthest_corner">farthest-corner</div>
+</body>
+</html>

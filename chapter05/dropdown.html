@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+</head>
+<body>
+</body>
+    <h3>레드향 주문하기</h3>
+    <form action="">
+        <fieldset>
+            <legend>상품 선택</legend>
+            <p><b>주문할 상품을 선책해 주세요</b></p>
+            <select name="product">
+                <optgroup label="선물용">
+                    <option value="special_3" selected>선물용 3kg</option>
+                    <option value="special_5" >선물용 5kg</option>
+                    <option value="special_7" >선물용 7kg</option>
+                    <option value="special_10" >선물용 10kg</option>
+                </optgroup>
+                <optgroup label="가정용">
+                    <option value="family_3" >가정용 3kg</option>
+                    <option value="family_5" >가정용 5kg</option>
+                    <option value="family_7" >가정용 7kg</option>
+                    <option value="family_10" >가정용 10kg</option>
+                </optgroup>
+            </select>
+            <input type="range" min="1" max="5" value="1"/>
+            <p><b>수령 방식 선택</b></p>
+            <label><input type="radio" name="gift2" value="yes">방문수령</label>
+            <label><input type="radio" name="gift2" value="no" checked>택배</label>
+            <p></p>
+            <input type="submit" value="주문"/>
+            <input type="reset" value="취소"/>
+        </fieldset>
+    </form>
+</body>
+</html>

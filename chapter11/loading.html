@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loading{
+            width: 300px;
+            height: 300px;
+            border-top: 3px solid black;
+            border-radius: 50%;
+            animation-name: loading;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            font-size: 24px;
+        }
+        #loading:hover{
+            animation-play-state: paused;
+        }
+        @keyframes loading{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">
+    </div>
+</body>
+</html>

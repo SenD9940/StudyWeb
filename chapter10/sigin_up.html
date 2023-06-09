@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        #container{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #sign_up ul li{
+            line-height: 30px;
+            list-style: none;
+            padding: 5px 10px;
+            margin-bottom: 2px;
+        }
+        #sign_up input{
+            padding: 8px;
+        }#sign_up fieldset:first-of-type label{
+            width: 60px;
+            display: inline-block;
+        }#sign_up button[type="submit"]{
+            padding: 8px;
+            width: 100%;
+            background-color: grey;
+            color: white;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form id="sign_up">
+            <fieldset>
+                <legend>개인정보</legend>
+                <ul>
+                <li><label for="full_name">이름</label>
+                    <input id="full_name" name="full_name"/>
+                </li>
+                <li><label for="tel">연락처</label>
+                    <input id="tel" name="full_name"/>
+                </li>
+                </ul>
+                <button type="submit">신청 하기</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
